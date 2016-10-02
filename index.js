@@ -16,7 +16,7 @@ var echoServer = http.createServer((req, res) => {
 	logStream.write(JSON.stringify(req.headers) + '\n')
 	
 	for(var header in req.headers)
-		res.setHeaders(header, req.headers[header])
+		res.setHeader(header, req.headers[header])
 		
 	req.pipe(res)
 })
