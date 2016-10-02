@@ -1,0 +1,18 @@
+{
+  "name": "proxyserver",
+  "version": "1.0.0",
+  "description": "a proxy server and echo server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hung"
+  ],
+  "author": "PhamHung",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.75.0",
+    "yargs": "^3.32.0"
+  }
+}
