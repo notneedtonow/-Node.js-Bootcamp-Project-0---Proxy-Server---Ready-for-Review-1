@@ -4,4 +4,4 @@ This is a Proxy server for Node.js submited as the pre-work requirement for Code
 
 Walkthough Gif:
  
-![Demo] (http://imgur.com/qIFxRca)
+![Demo] (http://imgur.com/qIFxRca.gif)
