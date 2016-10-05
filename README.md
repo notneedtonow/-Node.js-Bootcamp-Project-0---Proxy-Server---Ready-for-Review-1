@@ -22,7 +22,7 @@ Completed:
 Walkthrough Gif:
 [Add walkthrough.gif to the project root]
 
-![Video Walkthrough](http://i.imgur.com/qIFxRca.gif)
+![Video Walkthrough](https://github.com/phamhung0310/Proxy-server/tree/v1/README/Walkthough.gif)
 
 Note: to embed the gif file, just check your gif file into your repo and update the name of the file above.
 
