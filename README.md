@@ -28,7 +28,7 @@ Note: to embed the gif file, just check your gif file into your repo and update 
 ## Starting the Server
 
 ```bash
-npm start
+nodemon index.js
 ```
 
 ## Features
