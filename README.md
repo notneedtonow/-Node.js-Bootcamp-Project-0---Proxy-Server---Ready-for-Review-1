@@ -20,9 +20,8 @@ Completed:
 * [x] Optional: `-h` argument prints CLI API
 
 Walkthrough Gif:
-[Add walkthrough.gif to the project root]
 
-![Video Walkthrough](Walkthrough.gif)
+![Video Walkthrough](http://i.imgur.com/qIFxRca.gif)
 
 Note: to embed the gif file, just check your gif file into your repo and update the name of the file above.
 
