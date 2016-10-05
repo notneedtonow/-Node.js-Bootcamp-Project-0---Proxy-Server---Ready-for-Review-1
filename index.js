@@ -1,14 +1,27 @@
 var http = require('http')
 var request = require('request')
-var argv = require('yargs').argv
+var argv = require('yargs')
+			.usage('Usage: $0 [Options]')
+			.alias('p', '--port')
+			.describe('p', 'Specify a forwarding port')
+			.alias('x', '--host')
+			.describe('x', 'Specify a forwarding host')
+			.alias('e', '--exec')
+			.describe('e', 'Specify a process to proxy instead')
+			.alias('l', '--log')
+			.describe('l', 'Specify a output log file')				
+			.help('h')
+			.alias('h', 'help')
+			.epilog('copyright 2016')
+			.argv
 var fs = require('fs')
 
-var logStream = argv.logfile ? fs.createWriteStream(argv.logfile) : fs.createWriteStream('defaultlog.txt')
+var logStream = argv.logfile ? fs.createWriteStream(argv.logfile) : : process.stdout
 var schema = 'http://'
 var localhost = '127.0.0.1'
 var host = argv.host || localhost
 var port = argv.port || ((localhost === host) ? 8000 : 80)
-var destinationUrl = schema + host + ':' + port
+var destinationUrl = schema + host + ':' + port || argv.url
 
 var echoServer = http.createServer((req, res) => {
 	
