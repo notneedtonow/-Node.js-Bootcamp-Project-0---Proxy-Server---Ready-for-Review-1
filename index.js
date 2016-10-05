@@ -21,7 +21,7 @@ var schema = 'http://'
 var localhost = '127.0.0.1'
 var host = argv.host || localhost
 var port = argv.port || ((localhost === host) ? 8000 : 80)
-var destinationUrl = schema + host + ':' + port || argv.url
+var destinationUrl = argv.url ? (schema + argv.url) : (schema + host + ':' + port)
 
 var echoServer = http.createServer((req, res) => {
 	
